@@ -1,0 +1,91 @@
+/* General Page Styling */
+body {
+    font-family: "Verdana", sans-serif;
+    background-color: #eaf2f8;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+/* Gallery Section Styling */
+#gallery {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Featured Image Styling */
+figure {
+    position: relative;
+    margin: 0 auto 20px auto;
+    max-width: 80%;
+    border: 4px solid #3498db;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+/* Zoom-in effect for featured image */
+figure img:hover {
+    transform: scale(1.05);
+}
+
+/* Caption Styling */
+figcaption {
+    font-size: 1.2em;
+    color: #2980b9;
+    padding: 10px 0;
+    background-color: #f2f6f9;
+    border-top: 3px solid #3498db;
+}
+
+/* Thumbnail List Styling */
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    margin: 0 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Thumbnail Images */
+li img {
+    width: 240px;
+    height: 160px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Effect for Thumbnail Hover */
+li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+li img:hover {
+    transform: scale(1.08);
+    border: none;
+}
+
+/* Active Thumbnail Styling */
+img.active-thumbnail {
+    border: 3px solid #3498db;
+}
